@@ -40,7 +40,7 @@ function analyzeText(text) {
   let content = await fs.readFile(filePath, "utf8");
 
   // If user passed --unique, remove duplicate lines first
-  if (global.uniqueFlag === true) {the documentation 
+  if (global.uniqueFlag === true) {
     const result = await removeDuplicates(filePath);
 
     if (result.success) {
