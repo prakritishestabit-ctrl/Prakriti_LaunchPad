@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2025-12-02T13:28:50.269Z",
+    "cpuUsage": {
+      "user": 32616,
+      "system": 11860
+    },
+    "resourceUsage": {
+      "userCPUTime": 32633,
+      "systemCPUTime": 11866,
+      "maxRSS": 42796,
+      "sharedMemorySize": 0,
+      "unsharedDataSize": 0,
+      "unsharedStackSize": 0,
+      "minorPageFault": 2604,
+      "majorPageFault": 0,
+      "swappedOut": 0,
+      "fsRead": 0,
+      "fsWrite": 0,
+      "ipcSent": 0,
+      "ipcReceived": 0,
+      "signalsCount": 0,
+      "voluntaryContextSwitches": 16,
+      "involuntaryContextSwitches": 2
+    }
+  }
+]

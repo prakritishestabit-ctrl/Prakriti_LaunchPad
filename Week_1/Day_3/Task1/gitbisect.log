@@ -1,0 +1,30 @@
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad$ Week_1/git bisect start
+bash: Week_1/git: No such file or directory
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad$ cd /home/prakritisaldiya/prakriti/Launchpad/Week_1/Day_3/Task1
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect start
+status: waiting for both good and bad commits
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect bad
+status: waiting for good commit(s), bad commit known
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect good 22ee7ee
+Bisecting: 4 revisions left to test after this (roughly 2 steps)
+[ba72cc62352b875a0585519a462dd234ec3381d3] Commit5
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect bad
+Bisecting: 2 revisions left to test after this (roughly 1 step)
+[9ac50656f7fefa55fb83b48d332d2e48fab61885] Commit3
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect good
+Bisecting: 0 revisions left to test after this (roughly 1 step)
+[a63132b48366b6f31b24f8437d9537f753e9c915] Commit4
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect good
+ba72cc62352b875a0585519a462dd234ec3381d3 is the first bad commit
+commit ba72cc62352b875a0585519a462dd234ec3381d3
+Author: Prakriti Saldiya <prakritis.hestabit@gmail.com>
+Date:   Wed Dec 10 16:22:26 2025 +0530
+
+    Commit5
+
+ Week_1/Day_3/Task1/Task1.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ git bisect reset
+Previous HEAD position was a63132b Commit4
+Switched to branch 'main'
+prakritisaldiya@hestabit-Latitude-3450:~/prakriti/Launchpad/Week_1/Day_3/Task1$ 
