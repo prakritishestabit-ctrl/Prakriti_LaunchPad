@@ -1,0 +1,29 @@
+[2025-12-11 19:34:46] FAILED to reach http://localhost:8000/ping
+[2025-12-11 19:34:56] FAILED to reach http://localhost:8000/ping
+[2025-12-11 19:35:06] FAILED to reach http://localhost:8000/ping
+[2025-12-11 19:35:16] FAILED to reach http://localhost:8000/ping
+[2025-12-11 19:37:24] FAILED to reach http://localhost:8000/root
+[2025-12-11 19:37:34] FAILED to reach http://localhost:8000/root
+[2025-12-11 19:37:44] FAILED to reach http://localhost:8000/root
+
+
+Starting health check for: http://localhost:8000/
+Logging failures to: logs/health.log
+-----------------------------------------
+[2025-12-13 22:36:12] ✔ Healthy
+[2025-12-13 22:36:22] ✔ Healthy
+[2025-12-13 22:36:32] ✔ Healthy
+[2025-12-13 22:36:42] ✔ Healthy
+[2025-12-13 22:36:52] ✔ Healthy
+
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_5/server$ npm start
+
+> server@1.0.0 start
+> node server.js
+
+server started
+hello from the server
+hello from the server
+hello from the server
+hello from the server
+hello from the server
