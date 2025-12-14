@@ -1,1 +1,54 @@
-CherryPicked feature 
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git log --oneline
+e62c9ff (HEAD -> feature-right) Add right feature
+8d6b41c (main) Day 3: Stash usage proof
+f9d522b Day 3: Cherry-pick report
+15c27b8 js allowed
+d90c057 env test
+aab17e3 testing env block
+dfbc006 test env commit
+c8ad5f3 (origin/main, origin/HEAD) aritten a healthcheck script with node server
+fdab3bd added cherryPicked feature
+768bb44 completed till day4
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git checkout main
+D       Week_1/Day_1/Task2.png
+D       Week_1/Day_1/Task_3.js
+D       Week_1/Day_1/logs/day1-sysmetrics.json
+D       Week_1/Day_1/sysinfo.js
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git branch
+  feature-left
+  feature-right
+* main
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git checkout feature-left
+D       Week_1/Day_1/Task2.png
+D       Week_1/Day_1/Task_3.js
+D       Week_1/Day_1/logs/day1-sysmetrics.json
+D       Week_1/Day_1/sysinfo.js
+Switched to branch 'feature-left'
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git log --oneline
+d8f3904 (HEAD -> feature-left) Add left feature
+8d6b41c (main) Day 3: Stash usage proof
+f9d522b Day 3: Cherry-pick report
+15c27b8 js allowed
+d90c057 env test
+aab17e3 testing env block
+dfbc006 test env commit
+c8ad5f3 (origin/main, origin/HEAD) aritten a healthcheck script with node server
+fdab3bd added cherryPicked feature
+768bb44 completed till day4
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git checkout main
+D       Week_1/Day_1/Task2.png
+D       Week_1/Day_1/Task_3.js
+D       Week_1/Day_1/logs/day1-sysmetrics.json
+D       Week_1/Day_1/sysinfo.js
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git cherry-pick ^C
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_1/Day_3$ git cherry-pick d8f3904
+[main 3f0be46] Add left feature
+ Date: Sun Dec 14 18:11:40 2025 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Week_1/Day_3/file.txt
