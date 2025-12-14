@@ -1,0 +1,27 @@
+STASH PROOF – DAY 3
+
+Scenario:
+I had uncommitted changes while switching branches.
+
+Steps Performed:
+
+1. Made changes to a file without committing.
+
+2. Stashed the changes:
+   git stash
+
+3. Switched to another branch:
+   git checkout release/v0.1
+
+4. Verified working directory was clean.
+
+5. Returned to original branch:
+   git checkout main
+
+6. Restored the stashed changes:
+   git stash pop
+
+Result:
+- Changes were safely stored and restored.
+- No data loss occurred.
+- Branch switching was done cleanly using stash.
