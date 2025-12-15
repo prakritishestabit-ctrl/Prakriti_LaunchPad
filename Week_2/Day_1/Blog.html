@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarrin | Home</title>
+</head>
+
+<body>
+
+<header>
+    <img src="./Header/zarrinLogo.svg" alt="Zarrin logo">
+    <span><strong>Zarrin</strong></span>
+
+    <nav aria-label="Primary navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <button aria-label="Search">
+        <img src="./Header/search-minus.svg" alt="">
+    </button>
+    <button type="button">Contact Us</button>
+</header>
+
+<main>
+
+    <!-- Intro -->
+    <section>
+        <h3>OUR BLOGS</h3>
+        <h2>Explore insights, stories, and ideas</h2>
+
+        <p>
+            Our blogs are carefully written after thorough research by experienced writers.
+            We aim to deliver high-quality articles that inform, inspire, and engage readers.
+        </p>
+    </section>
+
+    <!-- Blog Cards -->
+    <section id="blogs">
+        <p id="loading">Loading blogs, please wait...</p>
+
+        <script>
+            const blogSection = document.getElementById('blogs');
+            const loadingText = document.getElementById('loading');
+
+            fetch('./Main/Section2/Data/data.json')
+                .then(res => res.json())
+                .then(data => {
+                    loadingText.remove();
+
+                    data.forEach(element => {
+                        blogSection.innerHTML += `
+                            <article>
+                                <img src="${element.imgPath}" alt="${element.title}">
+                                <h3>${element.about}</h3>
+                                <time>${element.date}</time>
+                                <h4>${element.title}</h4>
+                                <p>${element.content}</p>
+                                <a href="${element.blogLink}">Read more</a>
+                            </article>
+                        `;
+                    });
+                })
+                .catch(() => {
+                    loadingText.textContent = "Unable to load blogs.";
+                });
+        </script>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+        <h2>Subscribe to our weekly newsletter</h2>
+
+        <form>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Get started</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <img src="./Header/zarrinLogo.svg" alt="Zarrin logo">
+    <span>Zarrin</span>
+
+    <nav aria-label="Footer links">
+        <a href="./index.html">Home</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact Us</a>
+    </nav>
+
+    <div>
+        <img src="./footer/Images/FB.svg" alt="Facebook">
+        <img src="./footer/Images/IG.svg" alt="Instagram">
+        <img src="./footer/Images/LN.svg" alt="LinkedIn">
+        <img src="./footer/Images/YT.svg" alt="YouTube">
+    </div>
+
+    <hr>
+
+    <p>© 2023 Ideapeel Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
