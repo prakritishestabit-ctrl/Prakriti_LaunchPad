@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0b0b;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 600px;
+  margin: 80px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq {
+  background: #1f2933;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.question {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #374151;
+}
+
+.answer {
+  padding: 15px;
+  display: none;
+  background: #1f2933;
+}
