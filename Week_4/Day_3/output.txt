@@ -1,0 +1,21 @@
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad$ cd /home/prakritisaldiya/prakriti/Prakriti_LaunchPad/Week_4/Day_3
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_4/Day_3$ curl http://localhost:3000/products
+{"success":true,"data":[]}
+
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakritcurl "http://localhost:3000/products?includeDeleted=true"ducts?includeDeleted=true"
+{"success":true,"data":[{"_id":"6957a4f2ff01947a978de666","name":"iPhone 13","description":"Apple phone","price":499,"tags":["apple","phone"],"deletedAt":"2026-01-02T13:47:47.509Z","isDeleted":true,"updatedAt":"2026-01-02T13:47:47.509Z"},{"_id":"6957a4f2ff01947a978de667","name":"Samsung S21","description":"Samsung phone","price":399,"tags":["samsung","phone"],"deletedAt":"2026-01-02T12:59:03.230Z","isDeleted":true,"updatedAt":"2026-01-02T12:59:03.230Z"}]}prakr
+
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_4/Day_3$ curl http://localhost:3000/products
+{"success":true,"data":[{"deletedAt":null,"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":false}]}prcurl "http://localhost:3000/products?search=phone"nchPad/Week_4/Day_3$ curl "http://localhost:3000/products?search=phone"
+{"success":true,"data":[]}
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakritcurl "http://localhost:3000/products?minPrice=100&maxPrice=1000"inPrice=100&maxPrice=1000"
+{"success":true,"data":[{"deletedAt":null,"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":false}]}prcurl "http://localhost:3000/products?sort=price:desc"Pad/Week_4/Day_3$ curl "http://localhost:3000/products?sort=price:desc"
+{"success":true,"data":[{"deletedAt":null,"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":false}]}prcurl "http://localhost:3000/products?page=1&limit=2"hPad/Week_4/Day_3$ curl "http://localhost:3000/products?page=1&limit=2"
+{"success":true,"data":[{"deletedAt":null,"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":false}]}prcurl -X DELETE http://localhost:3000/products/695b637b87335dedd78de666
+{"success":true,"data":{"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":true,"deletedAt":"2026-01-05T07:13:07.842Z","updatedAt":"2026-01-05T07:13:07.843Z"}}prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_4/Day_3$ curl http://localhost:3000/products                                                                    curl http://localhost:3000/products
+{"success":true,"data":[]}
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakritcurl "http://localhost:3000/products?includeDeleted=true"ducts?includeDeleted=true"
+"success":true,"data":{"_id":"6957a4f2ff01947a978de666","name":"iPhone 13","description":"Apple phone","price":499,"tags":["apple","phone"],"deletedAt":"2026-01-02T13:47:47.509Z","isDeleted":true,"updatedAt":"2026-01-02T13:47:47.509Z"},{"_id":"6957a4f2ff01947a978de667","name":"Samsung S21","description":"Samsung phone","price":399,"tags":["samsung","phone"],"deletedAt":"2026-01-02T12:59:03.230Z","isDeleted":true,"updatedAt":"2026-01-02T12:59:03.230Z"},{"_id":"695b637b87335dedd78de666","name":"OnePlus 11","description":"Android flagship","price":599,"tags":["android","phone"],"isDeleted":true,"deletedAt":"2026-01-05T07:13:07.842Z","updatedAt":"curl -X DELETE http://localhost:3000/products/123BIT-511:~/prakriti/Prakriti_LaunchPad/Week_4/Day_3$ curl -X DELETE http://localhost:3000/products/123
+{"success":false,"message":"Cast to ObjectId failed for value \"123\" (type string) at path \"_id\" for model \"Product\"","code":"SERVER_ERROR","timestamp":"2026-01-05T07:14:13.955Z","path":"/products/123"}
+prakritisaldiya@HESTABIT-511:~/prakriti/Prakriti_LaunchPad/Week_4/Day_3$
+
