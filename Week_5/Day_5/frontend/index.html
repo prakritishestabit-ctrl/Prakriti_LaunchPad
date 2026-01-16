@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shout-out Wall</title>
+    <style>
+        body { font-family: sans-serif; max-width: 400px; margin: 50px auto; background: #eee; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        input { width: 70%; padding: 8px; }
+        button { padding: 8px; background: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Team Wall</h2>
+        <input type="text" id="input" placeholder="Say something...">
+        <button onclick="post()">Post</button>
+        <ul id="list"></ul>
+    </div>
+    <script>
+        async function load() {
+            const r = await fetch('/api/shoutouts');
+            const d = await r.json();
+            document.getElementById('list').innerHTML = d.map(s => `<li>${s.text}</li>`).join('');
+        }
+        async function post() {
+            const text = document.getElementById('input').value;
+            await fetch('/api/shoutouts', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ text })
+            });
+            document.getElementById('input').value = '';
+            load();
+        }
+        load();
+    </script>
+</body>
+</html>
