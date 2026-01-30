@@ -1,0 +1,13 @@
+[
+    "Sex",
+    "Pclass",
+    "Age",
+    "IsChild",
+    "IsElderly",
+    "Fare",
+    "HighFareFlag",
+    "FareAgeRatio",
+    "Embarked_C",
+    "Embarked_S",
+    "Embarked_Q"
+]

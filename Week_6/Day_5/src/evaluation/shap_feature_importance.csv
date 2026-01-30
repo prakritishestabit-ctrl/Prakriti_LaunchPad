@@ -1,0 +1,12 @@
+feature,importance
+Sex,1.0287099
+Pclass,0.76336795
+Age,0.3436693
+Fare,0.32475796
+FareAgeRatio,0.16676366
+Embarked_C,0.08596025
+Embarked_S,0.030549515
+HighFareFlag,0.0
+IsElderly,0.0
+IsChild,0.0
+Embarked_Q,0.0

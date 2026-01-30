@@ -1,0 +1,18 @@
+# Ignore virtual environment for all days
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Logs and generated files
+**/logs/
+*.log
+
+# Model binaries
+*.pkl
+*.joblib
+
+# Editor/OS files
+.vscode/
+.DS_Store

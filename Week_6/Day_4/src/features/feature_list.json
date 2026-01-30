@@ -1,0 +1,81 @@
+{
+    "features": [
+        {
+            "name": "Sex",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: Sex"
+        },
+        {
+            "name": "Fare",
+            "dtype": "float64",
+            "non_null_count": 683,
+            "type": "numerical",
+            "description": "Feature: Fare"
+        },
+        {
+            "name": "HighFareFlag",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: HighFareFlag"
+        },
+        {
+            "name": "FareAgeRatio",
+            "dtype": "float64",
+            "non_null_count": 683,
+            "type": "numerical",
+            "description": "Feature: FareAgeRatio"
+        },
+        {
+            "name": "Age",
+            "dtype": "float64",
+            "non_null_count": 683,
+            "type": "numerical",
+            "description": "Feature: Age"
+        },
+        {
+            "name": "Embarked_C",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: Embarked_C"
+        },
+        {
+            "name": "IsChild",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: IsChild"
+        },
+        {
+            "name": "IsElderly",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: IsElderly"
+        },
+        {
+            "name": "Pclass",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: Pclass"
+        },
+        {
+            "name": "Embarked_Q",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "categorical",
+            "description": "Feature: Embarked_Q"
+        },
+        {
+            "name": "Survived",
+            "dtype": "int64",
+            "non_null_count": 683,
+            "type": "target",
+            "description": "Feature: Survived"
+        }
+    ]
+}

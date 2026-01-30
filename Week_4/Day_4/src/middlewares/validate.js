@@ -14,7 +14,7 @@ const validate = (schema, property = "body") => {
       });
     }
 
-    req[property] = value; // sanitized + validated data
+    req[property] = value; 
     next();
   };
 };

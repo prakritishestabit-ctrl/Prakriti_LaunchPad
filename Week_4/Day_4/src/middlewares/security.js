@@ -6,10 +6,10 @@ const xss = require("xss-clean");
 
 module.exports = (app) => {
 
-  // Secure HTTP headers
+  // secure HTTP headers
   app.use(helmet());
 
-  // CORS configuration
+  // CORS 
   app.use(cors({
     origin: ["http://localhost:3000"],
     methods: ["GET", "POST", "PUT", "DELETE"],
@@ -26,12 +26,12 @@ module.exports = (app) => {
     })
   );
 
-  // Prevent NoSQL injection
+  // prevent NoSQL injection
   app.use(mongoSanitize());
 
-  // Prevent XSS attacks
+  // prevent XSS attacks
   app.use(xss());
 
-  // Payload size limit
+  // payload size limit
   app.use(require("express").json({ limit: "10kb" }));
 };
